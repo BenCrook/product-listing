@@ -1,0 +1,35 @@
+@value colors: '../cssVariables/colors.css';
+@value color-primary from colors;
+
+.button {
+    background-color: color-primary;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: transform .3s ease-in-out;
+    text-decoration: none;
+    transform: scale(1);
+    position: relative;
+    z-index: 1;
+}
+
+.isHovered {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.large {
+    padding: 20px 40px;
+    font-size: 20px;
+}
+
+.secondary {
+    background-color: #222;
+    color: #fff;
+}
+
+.red {
+    background-color: red;
+}
+
