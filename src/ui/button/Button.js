@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './Button.css';
+import styles from './Button.css';
 
 class Button extends Component {
     render() {
         return (
-            <a className="Button" href={this.props.link}>{this.props.text}</a>
+            <a className={this.props.modifier} href={this.props.link}>{this.props.text}</a>
         )
     }
 }
