@@ -1,0 +1,28 @@
+@value colors: '../../cssVariables/colors.css';
+@value color-gray--light from colors;
+
+.product {
+    border: 1px solid color-gray--light;
+    flex: 0 1 33.333%;
+    margin: 10px;
+    min-height: 150px;
+    position: relative;
+    text-align: center;
+}
+
+.productImage {
+    display: block;
+    width: 100%;
+}
+
+.productName {
+    font-size: 18px;
+}
+
+.productPrice {
+    font-size: 16px;
+}
+
+.productStock {
+    color: green;
+}

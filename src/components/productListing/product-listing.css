@@ -1,0 +1,5 @@
+.productListing {
+    clear: both;
+    display: flex;
+    margin: 20px 0;
+}
