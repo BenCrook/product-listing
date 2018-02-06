@@ -1,27 +1,18 @@
 import React from 'react';
 import styles from './products.css';
 
-
-
-function Products(props) {
-    const productData = props.productData;
-
-    const productDataList = productData.map(function(product) {
-        console.log(product);
-
-        return (
-            <div key={product.sku} className={styles.product}>
-                <div>
-                    <img className={styles.productImage} src="http://via.placeholder.com/600x600" alt=""/>
-                </div>
-                <div className={styles.productName}>{product.name}</div>
-                <div className={styles.productPrice}>{product.price}</div>
-                <div className={styles.productStock}>{product.stocked.toString()}</div>
+function Product(props) {
+    return (
+        <div className={styles.product}>
+            <div>
+                <img className={styles.productImage} src="http://via.placeholder.com/600x600" alt=""/>
             </div>
-        )
-    });
-
-    return productDataList;
+            <div className={styles.productName}>{props.name}</div>
+            <div className={styles.productPrice}>{props.price}</div>
+            <div className={styles.productStock}>{props.inStock}</div>
+        </div>
+    )
 }
 
-export default Products;
+
+export default Product;

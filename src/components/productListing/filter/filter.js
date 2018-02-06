@@ -1,14 +1,14 @@
-import React from 'react';
-import Search from '../../forms/search.js';
-import StockFilter from './stockFilter.js';
+import React, {Component} from 'react';
 
-function Filter(props) {
-    return (
-        <div>
-            <Search />
-            <StockFilter />
-        </div>
-    )
+class Filter extends Component {
+    render() {
+        return (
+            <div>
+                <input type="text" placeholder="Search term" onChange={this.props.textHandler} />
+                <input name="test" type="checkbox" checked={this.props.inStockOnly} onChange={this.props.checkHandler} />
+            </div>
+        )
+    }
 }
 
 export default Filter;
