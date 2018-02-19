@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './products.css';
+import Button from "../../button/button";
 
 function Product(props) {
     return (
@@ -10,6 +11,7 @@ function Product(props) {
             <div className={styles.productName}>{props.name}</div>
             <div className={styles.productPrice}>{props.price}</div>
             <div className={styles.productStock}>{props.inStock}</div>
+            <Button link="#" text="Add To Cart"/>
         </div>
     )
 }

@@ -1,14 +1,23 @@
-import React from 'react';
+import React, {Component} from 'react';
 import styles from './header.css';
 
+import Minicart from '../minicart/minicart';
 import Logo from '../logo/logo.js';
 
-function Header(props) {
-    return (
-        <header className={styles.header}>
-            <Logo />
-        </header>
-    );
+class Header extends Component {
+    constructor(props) {
+        super(props);
+        console.log(this);
+    }
+
+    render() {
+        return (
+            <header className={styles.header}>
+                <Logo />
+                <Minicart quantity={this.props.quantity} total={this.props.total} />
+            </header>
+        )
+    }
 }
 
 export default Header;

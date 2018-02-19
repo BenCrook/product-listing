@@ -1,0 +1,16 @@
+.minicart {
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+.count {
+    background-color: #fff;
+    color: #222;
+    padding: 5px;
+}
+
+.total {
+    padding: 5px;
+}
