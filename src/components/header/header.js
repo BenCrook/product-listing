@@ -14,7 +14,7 @@ class Header extends Component {
         return (
             <header className={styles.header}>
                 <Logo />
-                <Minicart quantity={this.props.quantity} total={this.props.total} />
+                <Minicart quantity={this.props.quantity} total={this.props.total} productsInBag={this.props.productsInBag} />
             </header>
         )
     }
