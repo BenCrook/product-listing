@@ -30,7 +30,7 @@ class ProductListing extends Component {
             if (!product.name.toLowerCase().includes(this.state.filterText.toLowerCase())) {
                 return;
             }
-            products.push(<Product key={product.sku} name={product.name} price={product.price} inStock={product.stocked} />);
+            products.push(<Product addToBagEvent={this.props.addToBagEvent} key={product.sku} name={product.name} price={product.price} inStock={product.stocked} />);
         });
 
         return products;
@@ -52,6 +52,7 @@ class ProductListing extends Component {
 
                 <div className={styles.productListing}>
                     {this.getProducts()}
+                    <h2 onClick={this.props.addToBagEvent}>Product Listing</h2>
                 </div>
             </div>
         )

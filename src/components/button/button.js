@@ -33,7 +33,7 @@ class Button extends Component {
 
         return (
             <a className={className}
-               href={this.props.link}
+               onClick={this.props.link}
                onMouseEnter={this.onMouseEnter}
                onMouseLeave={this.onMouseLeave}
             >

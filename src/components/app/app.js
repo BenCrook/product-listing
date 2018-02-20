@@ -4,12 +4,12 @@ import Header from '../header/header.js';
 import ProductListing from '../productListing/product-listing.js';
 
 const productsData = [
-    {category: 'Category One',sku: 'PRD1', price: '$49.99', stocked: true, name: 'Football Kit'},
-    {category: 'Category One',sku: 'PRD2', price: '$9.99', stocked: true, name: 'Rugby Kit'},
-    {category: 'Category One',sku: 'PRD3', price: '$29.99', stocked: false, name: 'Ice Hockey Kit'},
-    {category: 'Category Two',sku: 'PRD4', price: '$99.99', stocked: true, name: 'Handball Kit'},
-    {category: 'Category Two',sku: 'PRD5', price: '$399.99', stocked: false, name: 'Baseball Kit'},
-    {category: 'Category Two',sku: 'PRD6', price: '$199.99', stocked: true, name: 'Wrestling Kit'}
+    {category: 'Category One',sku: 'PRD1', price: 49.99, stocked: true, name: 'Football Kit'},
+    {category: 'Category One',sku: 'PRD2', price: 9.99, stocked: true, name: 'Rugby Kit'},
+    {category: 'Category One',sku: 'PRD3', price: 29.99, stocked: false, name: 'Ice Hockey Kit'},
+    {category: 'Category Two',sku: 'PRD4', price: 99.99, stocked: true, name: 'Handball Kit'},
+    {category: 'Category Two',sku: 'PRD5', price: 399.99, stocked: false, name: 'Baseball Kit'},
+    {category: 'Category Two',sku: 'PRD6', price: 199.99, stocked: true, name: 'Wrestling Kit'}
 ];
 
 class App extends Component {
@@ -26,7 +26,20 @@ class App extends Component {
             ]
         };
 
+        this.addToBag = this.addToBag.bind(this);
+
         console.log(this);
+    }
+
+    addToBag(product) {
+        console.log('Clicked');
+        console.log(product);
+
+        this.setState({
+            productsInBag: product
+        });
+
+        console.log(this.state.productsInBag);
     }
 
     render() {
@@ -34,8 +47,9 @@ class App extends Component {
             <div>
                 <Header quantity={this.state.quantity} total={this.state.total} productsInBag={this.state.productsInBag} />
                 <div className={styles.container}>
-                    <ProductListing products={productsData} />
+                    <ProductListing addToBagEvent={this.addToBag} products={productsData} />
                 </div>
+                <h2 onClick={this.addToBag}>Click me</h2>
             </div>
         );
     }
