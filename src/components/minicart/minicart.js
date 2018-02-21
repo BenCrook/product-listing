@@ -32,7 +32,7 @@ class Minicart extends Component {
             markup += `<div>${product.name}</div>`;
         });
 
-        return markup;
+        return {__html: markup};
     }
 
     render() {
@@ -42,9 +42,7 @@ class Minicart extends Component {
                     <span className={styles.count}>{this.getCartItemQuantity()} items</span>
                     <span className={styles.total}>£{this.getCartItemTotal()}</span>
                 </div>
-                <div className="minicart__products">
-                    {this.cartProducts()}
-                </div>
+                <div className="minicart__products" dangerouslySetInnerHTML={this.cartProducts()} />
                 <a onClick={this.props.emptyClickEvent}>Empty</a>
             </div>
         )
