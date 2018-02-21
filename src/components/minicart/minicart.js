@@ -45,6 +45,7 @@ class Minicart extends Component {
                 <div className="minicart__products">
                     {this.cartProducts()}
                 </div>
+                <a onClick={this.props.emptyClickEvent}>Empty</a>
             </div>
         )
     }

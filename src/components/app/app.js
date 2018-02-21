@@ -27,25 +27,33 @@ class App extends Component {
         };
 
         this.addToBag = this.addToBag.bind(this);
+        this.emptyBag = this.emptyBag.bind(this);
 
         console.log(this);
     }
 
     addToBag(product) {
-        console.log('Clicked');
-        console.log(product);
+        const prevState = this.state.productsInBag;
+        prevState.push(product);
+        const newState = prevState;
 
         this.setState({
-            productsInBag: product
+            productsInBag: newState
         });
 
-        console.log(this.state.productsInBag);
+        console.log('after', this.state.productsInBag);
+    }
+
+    emptyBag() {
+        this.setState({
+            productsInBag: []
+        });
     }
 
     render() {
         return (
             <div>
-                <Header quantity={this.state.quantity} total={this.state.total} productsInBag={this.state.productsInBag} />
+                <Header emptyClickEvent={this.emptyBag} quantity={this.state.quantity} total={this.state.total} productsInBag={this.state.productsInBag} />
                 <div className={styles.container}>
                     <ProductListing addToBagEvent={this.addToBag} products={productsData} />
                 </div>

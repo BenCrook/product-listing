@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e898a0dd-ecb4-4e28-836d-b010fc1aa16c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.js" afterPath="$PROJECT_DIR$/src/components/app/app.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/button.js" afterPath="$PROJECT_DIR$/src/components/button/button.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/productListing/product-listing.js" afterPath="$PROJECT_DIR$/src/components/productListing/product-listing.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" afterPath="$PROJECT_DIR$/src/components/header/header.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/minicart/minicart.js" afterPath="$PROJECT_DIR$/src/components/minicart/minicart.js" />
       <change beforePath="$PROJECT_DIR$/src/components/productListing/products/products.js" afterPath="$PROJECT_DIR$/src/components/productListing/products/products.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,13 +16,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="34" />
+            <state relative-caret-position="305">
+              <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/productListing/products/products.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="12" column="134" lean-forward="true" selection-start-line="12" selection-start-column="134" selection-end-line="12" selection-end-column="134" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -34,18 +45,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="94">
               <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="products.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/productListing/products/products.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -68,8 +67,8 @@
       <file leaf-file-name="header.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/header/header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="336">
+              <caret line="16" column="69" lean-forward="false" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -77,15 +76,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="minicart.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="minicart.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/minicart/minicart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="31" column="51" lean-forward="true" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+            <state relative-caret-position="312">
+              <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
               <folding>
-                <marker date="1519150713584" expanded="true" signature="953:1343" ph="..." />
-                <marker date="1519150713584" expanded="true" signature="1005:1206" ph="..." />
-                <marker date="1519150713584" expanded="true" signature="1259:1324" ph="..." />
+                <marker date="1519201283830" expanded="true" signature="953:1409" ph="..." />
+                <marker date="1519201283830" expanded="true" signature="1005:1206" ph="..." />
+                <marker date="1519201283830" expanded="true" signature="1259:1324" ph="..." />
               </folding>
             </state>
           </provider>
@@ -103,6 +102,7 @@
       <find>foreach</find>
       <find>productInBag</find>
       <find>setState</find>
+      <find>prevstate</find>
     </findStrings>
     <replaceStrings>
       <replace>productsInBag</replace>
@@ -131,12 +131,12 @@
         <option value="$PROJECT_DIR$/src/components/app/app.test.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/productListing/filter/filter.js" />
-        <option value="$PROJECT_DIR$/src/components/minicart/minicart.js" />
-        <option value="$PROJECT_DIR$/src/components/header/header.js" />
         <option value="$PROJECT_DIR$/src/components/productListing/product-listing.js" />
-        <option value="$PROJECT_DIR$/src/components/productListing/products/products.js" />
         <option value="$PROJECT_DIR$/src/components/button/button.js" />
+        <option value="$PROJECT_DIR$/src/components/productListing/products/products.js" />
+        <option value="$PROJECT_DIR$/src/components/header/header.js" />
         <option value="$PROJECT_DIR$/src/components/app/app.js" />
+        <option value="$PROJECT_DIR$/src/components/minicart/minicart.js" />
       </list>
     </option>
   </component>
@@ -293,12 +293,12 @@
       <workItem from="1517866210691" duration="7397000" />
       <workItem from="1517955707691" duration="149000" />
       <workItem from="1519064007807" duration="2880000" />
-      <workItem from="1519148966664" duration="5889000" />
+      <workItem from="1519148966664" duration="6876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20505000" />
+    <option name="totallyTimeSpent" value="21492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -594,16 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/header/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/button/button.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
@@ -616,32 +606,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/productListing/products/products.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="242">
+          <caret line="12" column="134" lean-forward="true" selection-start-line="12" selection-start-column="134" selection-end-line="12" selection-end-column="134" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/minicart/minicart.js">
+    <entry file="file://$PROJECT_DIR$/src/components/header/header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="31" column="51" lean-forward="true" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+        <state relative-caret-position="336">
+          <caret line="16" column="69" lean-forward="false" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
           <folding>
-            <marker date="1519150713584" expanded="true" signature="953:1343" ph="..." />
-            <marker date="1519150713584" expanded="true" signature="1005:1206" ph="..." />
-            <marker date="1519150713584" expanded="true" signature="1259:1324" ph="..." />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="34" />
+        <state relative-caret-position="305">
+          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/minicart/minicart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <marker date="1519201283830" expanded="true" signature="953:1409" ph="..." />
+            <marker date="1519201283830" expanded="true" signature="1005:1206" ph="..." />
+            <marker date="1519201283830" expanded="true" signature="1259:1324" ph="..." />
           </folding>
         </state>
       </provider>
