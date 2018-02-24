@@ -1,4 +1,4 @@
-@value colors: '../../cssVariables/colors.css';
+@value colors: '../cssVariables/colors.css';
 @value color-gray--light from colors;
 
 .product {
