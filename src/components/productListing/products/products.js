@@ -10,7 +10,7 @@ class Product extends Component {
     }
 
     addToBag() {
-        this.props.addToBagEvent({category: 'Category Two',sku: 'PRD4', price: this.props.price, stocked: true, name: this.props.name});
+        this.props.addToBagEvent({price: this.props.price, stocked: true, name: this.props.name});
     }
 
     render () {

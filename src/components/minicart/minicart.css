@@ -1,16 +1,48 @@
+@value colors: '../cssVariables/colors.css';
+@value color-gray--dark, color-gray--light from colors;
+
 .minicart {
     color: #fff;
     position: absolute;
+    height: 63px;
     right: 20px;
     top: 0;
 }
 
+.minicart__summary {
+    line-height: 63px;
+}
+
 .count {
-    background-color: #fff;
-    color: #222;
     padding: 5px;
 }
 
 .total {
     padding: 5px;
+}
+
+.minicart__dropdown {
+    background: white;
+    border: 1px solid color-gray--light;
+    color: color-gray--dark;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 63px;
+    z-index: 5;
+    width: 200px;
+}
+
+.minicart__empty {
+    background: color-gray--dark;
+    cursor: pointer;
+    color: white;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.minicart__product-price {
+    text-align: right;
 }

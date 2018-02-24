@@ -18,30 +18,19 @@ class App extends Component {
 
         this.state = {
             quantity: 0,
-            total: 9.99,
-            productsInBag: [
-                {category: 'Category Two',sku: 'PRD4', price: 99.99, stocked: true, name: 'Handball Kit'},
-                {category: 'Category Two',sku: 'PRD5', price: 399.99, stocked: false, name: 'Baseball Kit'},
-                {category: 'Category Two',sku: 'PRD6', price: 199.99, stocked: true, name: 'Wrestling Kit'}
-            ]
+            total: 0,
+            productsInBag: []
         };
 
         this.addToBag = this.addToBag.bind(this);
         this.emptyBag = this.emptyBag.bind(this);
-
-        console.log(this);
     }
 
     addToBag(product) {
-        const prevState = this.state.productsInBag;
-        prevState.push(product);
-        const newState = prevState;
-
+        console.log(product);
         this.setState({
-            productsInBag: newState
+            productsInBag: this.state.productsInBag.concat([product])
         });
-
-        console.log('after', this.state.productsInBag);
     }
 
     emptyBag() {

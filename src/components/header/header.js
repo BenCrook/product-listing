@@ -5,11 +5,6 @@ import Minicart from '../minicart/minicart';
 import Logo from '../logo/logo.js';
 
 class Header extends Component {
-    constructor(props) {
-        super(props);
-        console.log(this);
-    }
-
     render() {
         return (
             <header className={styles.header}>
